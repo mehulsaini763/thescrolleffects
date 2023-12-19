@@ -37,8 +37,6 @@ export default function Home() {
   const [dragMove, setDragMove] = useState(0);
   const [dragEnd, setDragEnd] = useState(0);
 
-  console.log(scroll);
-
   return (
     <main
       className={`relative text-white flex min-h-screen ${montserrat.className}`}
@@ -55,16 +53,12 @@ export default function Home() {
             dragCurrent - 100 < -(7 * 100) + 100 ? -600 : dragCurrent - 100
           );
           setDragMove(
-            dragCurrent - 100 < -(7 * 100) + 100 ? -  600 : dragCurrent - 100
+            dragCurrent - 100 < -(7 * 100) + 100 ? -600 : dragCurrent - 100
           );
           setScroll(dragMove);
         } else {
-          setDragCurrent(
-            dragCurrent + 100 > 0 ? 0 : dragCurrent + 100
-          );
-          setDragMove(
-            dragCurrent + 100 > 0 ? 0 : dragCurrent + 100
-          );
+          setDragCurrent(dragCurrent + 100 > 0 ? 0 : dragCurrent + 100);
+          setDragMove(dragCurrent + 100 > 0 ? 0 : dragCurrent + 100);
           setScroll(dragMove);
         }
       }}

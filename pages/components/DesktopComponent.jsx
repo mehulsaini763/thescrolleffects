@@ -82,6 +82,8 @@ const DesktopComponent = ({ scroll }) => {
     ],
   ]);
 
+  if(scroll==undefined)return <></>
+
   return (
     <>
       {/* LEFT PLANE */}
