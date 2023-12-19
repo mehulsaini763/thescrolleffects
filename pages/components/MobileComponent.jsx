@@ -38,13 +38,13 @@ const MobileComponent = ({ scroll, dragMove }) => {
     <>
       {/* PAGINATION */}
       <div className="z-40 fixed bottom-0 inset-x-0 flex justify-center gap-2 p-4">
-        <div className={`rounded-full bg-neutral-200${scroll==0?"":"/50"} h-4 w-4`}></div>
-        <div className={`rounded-full bg-neutral-200${scroll==-100?"":"/50"} h-4 w-4`}></div>
-        <div className={`rounded-full bg-neutral-200${scroll==-200?"":"/50"} h-4 w-4`}></div>
-        <div className={`rounded-full bg-neutral-200${scroll==-300?"":"/50"} h-4 w-4`}></div>
-        <div className={`rounded-full bg-neutral-200${scroll==-400?"":"/50"} h-4 w-4`}></div>
-        <div className={`rounded-full bg-neutral-200${scroll==-500?"":"/50"} h-4 w-4`}></div>
-        <div className={`rounded-full bg-neutral-200${scroll==-600?"":"/50"} h-4 w-4`}></div>
+        <div className={`rounded-full ${scroll==0?"bg-neutral-200":"bg-neutral-200/50"} h-4 w-4`}></div>
+        <div className={`rounded-full ${scroll==-100?"bg-neutral-200":"bg-neutral-200/50"} h-4 w-4`}></div>
+        <div className={`rounded-full ${scroll==-200?"bg-neutral-200":"bg-neutral-200/50"} h-4 w-4`}></div>
+        <div className={`rounded-full ${scroll==-300?"bg-neutral-200":"bg-neutral-200/50"} h-4 w-4`}></div>
+        <div className={`rounded-full ${scroll==-400?"bg-neutral-200":"bg-neutral-200/50"} h-4 w-4`}></div>
+        <div className={`rounded-full ${scroll==-500?"bg-neutral-200":"bg-neutral-200/50"} h-4 w-4`}></div>
+        <div className={`rounded-full ${scroll==-600?"bg-neutral-200":"bg-neutral-200/50"} h-4 w-4`}></div>
       </div>
 
       <div className="w-full h-full overflow-hidden">
